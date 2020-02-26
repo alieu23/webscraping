@@ -21,12 +21,5 @@ def getflight():
 
     return flights
 
-def airlines():
-    flight_id = 'TK1'  # Turkish Airlines' Istanbul - New York flight
-    fr = flightradar24.Api()
-    flight = fr.get_flight(flight_id)
-    print(flight)
-    return flight
-#airlines()
 
 getflight()
